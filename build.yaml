@@ -14,3 +14,4 @@
 ---
 include:
   - board: planck_rev6
+  - board: lpgalaxy_blank_slate
