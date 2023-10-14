@@ -13,4 +13,4 @@
 #
 ---
 include:
-  - board: 36keys
+  - board: planck_rev6
