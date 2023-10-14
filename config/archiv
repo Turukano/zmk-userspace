@@ -1,0 +1,60 @@
+ / {
+    behaviors {
+        u_ú: u_or_longu {
+            compatible = "zmk,behavior-hold-tap";
+            label = "u_ú";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&ú>;
+        };
+    };
+
+/ {
+    macros {
+        ú: long_u {
+            label = "long_u";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp DE_ACUT &kp u>
+                ;
+        };
+
+        á: long_a {
+            label = "long_a";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp DE_ACUT &kp a>
+                ;
+        };
+
+        é: long_e {
+            label = "long_e";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp DE_ACUT &kp e>
+                ;
+        };
+
+        í: long_i {
+            label = "long_i";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp DE_ACUT &kp i>
+                ;
+        };
+
+        ó: long_o {
+            label = "long_o";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp DE_ACUT &kp o>
+                ;
+        };
+    };
+};

@@ -18,33 +18,36 @@
 
 #include "combos.dtsi" //muss nach den layerdefs sein
 
+#define LONG(keycode) &long keycode keycode
+
 / {
     behaviors {
-        u_ú: u_or_longu {
+        mo_tog: behavior_mo_tog {
             compatible = "zmk,behavior-hold-tap";
-            label = "u_ú";
+            label = "mo_tog";
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
-            bindings = <&kp>, <&ú>;
+            bindings = <&kp>, <&elongate>;
         };
     };
 
 / {
     macros {
-        ú: long_u {
-            label = "long_u";
+        elongate: elongate {
+            label = "elongate";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp DE_ACUT &kp u>
+                = <&macro_tap &kp DE_ACUT> 
+                , <&kp>
                 ;
         };
     };
 };
 
 ZMK_LAYER(default_layer,
- &kp J &kp D &u_ú ___ ___ ___ ___ ___ ___ ___ ___ ___
+ &kp J &kp D LONG(U) LONG(A) ___ ___ ___ ___ ___ ___ ___ ___
  ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
   ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
    ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
