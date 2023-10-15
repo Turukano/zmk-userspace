@@ -22,20 +22,29 @@
 
 / {
     behaviors {
-        mo_tog: behavior_mo_tog {
+        long: long {
             compatible = "zmk,behavior-hold-tap";
-            label = "mo_tog";
+            label = "long";
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
-            bindings = <&kp>, <&elongate>;
+            bindings = <&kp>, <&m_elongate>;
+        };
+
+        longudia: longudia {
+            compatible = "zmk,behavior-hold-tap";
+            label = "longudia";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&kp DE_UDIA>, <&m_longudia>;
         };
     };
 
 / {
     macros {
-        elongate: elongate {
-            label = "elongate";
+        m_elongate: m_elongate {
+            label = "m_elongate";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -43,13 +52,24 @@
                 , <&kp>
                 ;
         };
+        
+        m_longudia: m_longudia {
+            label = "m_longudia";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT> 
+                , <&macro_tap &kp KP_N0 &kp KP_N3 &kp KP_N6 &kp KP_N9 >
+                , <&macro_release &kp LALT> 
+                ;
+        };
     };
 };
 
 ZMK_LAYER(default_layer,
  &kp J &kp D LONG(U) LONG(A) ___ ___ ___ ___ ___ ___ ___ ___
- ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
-  ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
+ ___ ___ LONG(I) LONG(E) LONG(O) ___ ___ ___ ___ ___ ___ ___
+  ___ ___ &longudia &longadia &longodia ___ ___ ___ ___ ___ ___ ___
    ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
 )
 
