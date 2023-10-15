@@ -13,7 +13,7 @@
 
 #define DEF         0
 #define SHIF        1
-#define NAV         2
+#define NAV         2 
 #define NUM         3
 #define STRG        4
 
