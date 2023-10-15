@@ -17,7 +17,7 @@
 #define NUM         3
 #define STRG        4
 
-#include "combos.dtsi" //muss nach den layerdefs sein
+//#include "combos.dtsi" //muss nach den layerdefs sein
 
 #define LONG(keycode) &long keycode keycode
 
