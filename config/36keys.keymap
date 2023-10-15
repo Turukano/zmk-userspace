@@ -1,6 +1,7 @@
+#include "functions.dtsi"
 #include <behaviors.dtsi>
 #include "keymap_german.h"
-#include "functions.dtsi"
+
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include "../zmk-nodefree-config/helper.h"
@@ -24,18 +25,18 @@
     behaviors {
         long: long {
             compatible = "zmk,behavior-hold-tap";
-            label = "long";
+            //label = "long";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "tap-preferred";
             tapping-term-ms = <200>;
             bindings = <&kp>, <&m_elongate>;
         };
 
         longudia: longudia {
             compatible = "zmk,behavior-hold-tap";
-            label = "longudia";
+            //label = "longudia";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "tap-preferred";
             tapping-term-ms = <200>;
             bindings = <&kp DE_UDIA>, <&m_longudia>;
         };
@@ -44,7 +45,7 @@
 / {
     macros {
         m_elongate: m_elongate {
-            label = "m_elongate";
+            //label = "m_elongate";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -54,7 +55,7 @@
         };
         
         m_longudia: m_longudia {
-            label = "m_longudia";
+            //label = "m_longudia";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -69,7 +70,7 @@
 ZMK_LAYER(default_layer,
  &kp J &kp D LONG(U) LONG(A) ___ ___ ___ ___ ___ ___ ___ ___
  ___ ___ LONG(I) LONG(E) LONG(O) ___ ___ ___ ___ ___ ___ ___
-  ___ ___ &longudia &longadia &longodia ___ ___ ___ ___ ___ ___ ___
+  ___ ___ &longudia ___ ___ ___ ___ ___ ___ ___ ___ ___
    ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
 )
 
