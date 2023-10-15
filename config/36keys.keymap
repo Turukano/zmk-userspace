@@ -40,6 +40,15 @@
             tapping-term-ms = <200>;
             bindings = <&kp DE_UDIA>, <&m_longudia>;
         };
+
+        x_sqt: x_sqt {
+            compatible = "zmk,behavior-hold-tap";
+            //label = "x_sqt";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&kp X>, <&kp DE_SQT>;
+        };
     };
 
 / {
@@ -68,7 +77,7 @@
 };
 
 ZMK_LAYER(default_layer,
- &kp J &kp D LONG(U) LONG(A) ___ ___ ___ ___ ___ ___ ___ ___
+ &kp J &kp D LONG(U) LONG(A) &x_sqt ___ ___ ___ ___ ___ ___ ___
  ___ ___ LONG(I) LONG(E) LONG(O) ___ ___ ___ ___ ___ ___ ___
   ___ ___ &longudia ___ ___ ___ ___ ___ ___ ___ ___ ___
    ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
