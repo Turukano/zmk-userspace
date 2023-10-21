@@ -15,11 +15,11 @@
 #define NUM         3
 #define STRG        4
 
-#include "combos.h" //muss nach den layerdefs sein
-#include "functions.h"
-#include "german.h"
+#include "combos.dtsi" //muss nach den layerdefs sein
+#include "functions.dtsi"
+#include "german.dtsi"
 #include "helper.h"
-//#include "macros.h"
+//#include "macros.dtsi"
 
 #define LONG(keycode) &long keycode keycode
 
