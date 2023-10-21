@@ -19,7 +19,7 @@
 #include "functions.h"
 #include "german.h"
 #include "helper.h"
-#include "macros.h"
+//#include "macros.h"
 
 #define LONG(keycode) &long keycode keycode
 
