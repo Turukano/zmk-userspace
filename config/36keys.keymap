@@ -1,10 +1,8 @@
-#include "functions.dtsi"
 #include <behaviors.dtsi>
-#include "keymap_german.h"
 
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include "helper.h"
+
 //#include "../zmk-nodefree-config/keypos_def/keypos_48keys.h"
 //#include "../zmk-nodefree-config/international_chars/german.dtsi"
 
@@ -17,7 +15,11 @@
 #define NUM         3
 #define STRG        4
 
-#include "combos.dtsi" //muss nach den layerdefs sein
+#include "combos.h" //muss nach den layerdefs sein
+#include "functions.h"
+#include "german.h"
+#include "helper.h"
+#include "macros.h"
 
 #define LONG(keycode) &long keycode keycode
 
