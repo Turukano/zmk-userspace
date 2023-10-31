@@ -35,11 +35,19 @@ ZMK_BEHAVIOR(D_W, hold_tap,
     bindings = <&kp S(D)>, <&kp S(W)>;
 )
 
+ZMK_BEHAVIOR(U_ACCENT, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp S(A)>, <&kp DE_SQT &kp S(A)>;
+)
+
 ZMK_LAYER(shifted_layer,
- &kp S(J)	&D_W ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
-  ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
-   ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
-    ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
+&kp S(J)	&D_W	&U_ACCENT	&A_ACCENT	&X_ACCENTI		&P_larrow	&H_lcurl	&L_bslsh	&M_rcurl	&G_rarrow
+&kp S(C) 	&kp S(T)	&kp S(I)	&E_ACCENT	&O_ACCENT		&kp S(B)	&kp S(N)	&kp S(R) 	&kp S(S)	&senter_center
+&kp S(F)	&kp S(V)	&UDIA_ACCENT	&kp S(DE_ADIA)	&ODIA_ACCENT		&kp S(DE_Y)	&kp S(DE_Z)	&minus_unds	&kp DE_SEMI	&K_Q
+___ ___ ___ ___			&kp DE_DQT	&kp DE_COLN		&kp C(BSPC)	&kp SPACE		___ ___ ___ ___	
+
 )
 
 ZMK_LAYER(nav_layer,
