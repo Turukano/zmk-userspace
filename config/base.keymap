@@ -23,10 +23,10 @@
 #include "layer_two.dtsi"
 
 ZMK_LAYER(default_layer,
-&kp j	&none	&none	&none	&none		&none	&none	&none	&none	&none
+&kp J	&none	&none	&none	&none		&none	&none	&none	&none	&none
 &none	&none	&none	&none	&none		&kp b	&kp n	&none	&none	&none
-&kp f	&kp v	&udia_accent	&kp DE_ADIA	&odia_accent		&kp DE_Y	&td_z_at	&sl SHIF	&td_comm_quest	&k_q
-	___  ___	___	&sl SHIF	&dot_excl		&kp BSPC	&space_nav		___	___  ___
+&kp F	&kp V	&none	&kp DE_ADIA	&none		&kp DE_Y	&none	&sl SHIF	&none	&none
+	___  ___	___	&sl SHIF	&none		&kp BSPC	&space_nav		___	___  ___
 )
 
 ZMK_LAYER(shifted_layer,
