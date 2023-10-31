@@ -65,21 +65,21 @@ ZMK_BEHAVIOR(c_strg, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <280>;
     quick-tap-ms = <125>;
-    bindings = <&kp C>, <&sl STRG>;
+    bindings = <&kp C>, <&mo STRG>;
 )
 
 ZMK_BEHAVIOR(t_nav, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <280>;
     quick-tap-ms = <125>;
-    bindings = <&kp T>, <&sl NAV>;
+    bindings = <&kp T>, <&mo NAV>;
 )
 
 ZMK_BEHAVIOR(i_num, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <280>;
     quick-tap-ms = <125>;
-    bindings = <&kp I>, <&sl NUM>;
+    bindings = <&kp I>, <&mo NUM>;
 )
 
 ZMK_BEHAVIOR(e_accent, hold_tap,
@@ -147,4 +147,25 @@ ZMK_BEHAVIOR(td_z_at, tap_dance,
 ZMK_BEHAVIOR(td_comm_quest, tap_dance,
     tapping-term-ms = <250>;
     bindings = <&kp DE_COMM>, <&kp DE_QUES>;
+)
+
+ZMK_BEHAVIOR(k_q, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp K>, <&kp Q>;
+)
+
+ZMK_BEHAVIOR(dot_excl, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp DE_DOT>, <&kp DE_EXCL>;
+)
+
+ZMK_BEHAVIOR(space_nav, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp SPACE>, <&mo NAV>;
 )
