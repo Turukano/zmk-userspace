@@ -29,12 +29,19 @@ ZMK_LAYER(default_layer,
 	___  ___	___	&sl SHIF	&dot_excl		&kp BSPC	&space_nav		___	___  ___
 )
 
-ZMK_LAYER(shifted_layer,
+ZMK_LAYER(def_layer,
+ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
+  ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
+   ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
+    ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
+    )
+
+/*ZMK_LAYER(shifted_layer,
 &kp S(J)	&D_W	&U_ACCENT	&A_ACCENT	&X_ACCENTI		&P_larrow	&H_lcurl	&L_bslsh	&M_rcurl	&G_rarrow
 &kp S(C) 	&kp S(T)	&kp S(I)	&E_ACCENT	&O_ACCENT		&kp S(B)	&kp S(N)	&kp S(R) 	&kp S(S)	&senter_center
 &kp S(F)	&kp S(V)	&UDIA_ACCENT	&kp S(DE_ADIA)	&ODIA_ACCENT		&kp S(DE_Y)	&kp S(DE_Z)	&minus_unds	&kp DE_SEMI	&K_Q
 ___ ___ ___ 			&kp DE_DQT	&kp DE_COLN		&kp C(BSPC)	&kp SPACE		 ___ ___ ___	
-)
+)*/
 
 ZMK_LAYER(nav_layer,
  ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
