@@ -23,8 +23,8 @@
 #include "layer_two.dtsi"
 
 ZMK_LAYER(default_layer,
-&kp j	&d_w	&u_accent	&a_accent	&x_accenti		&p_sqbr	&h_brac	&l_slash	&m_cbrac	&g_csqbrac
-&c_strg	&t_nav	&i_num	&e_accent	&o_accent		&kp b	&kp n	&r_apos	&s_ss	&enter_strg
+&kp j	&none	&none	&none	&none		&none	&none	&none	&none	&none
+&none	&none	&none	&none	&none		&kp b	&kp n	&none	&none	&none
 &kp f	&kp v	&udia_accent	&kp DE_ADIA	&odia_accent		&kp DE_Y	&td_z_at	&sl SHIF	&td_comm_quest	&k_q
 	___  ___	___	&sl SHIF	&dot_excl		&kp BSPC	&space_nav		___	___  ___
 )
