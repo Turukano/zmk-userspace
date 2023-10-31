@@ -19,71 +19,13 @@
 #include "functions.dtsi"
 #include "german.dtsi"
 #include "helper.h"
-//#include "macros.dtsi"
-
-#define LONG(keycode) &long keycode keycode
-
-/ {
-    behaviors {
-        long: long {
-            compatible = "zmk,behavior-hold-tap";
-            //label = "long";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&kp>, <&m_elongate>;
-        };
-
-        longudia: longudia {
-            compatible = "zmk,behavior-hold-tap";
-            //label = "longudia";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&kp DE_UDIA>, <&m_longudia>;
-        };
-
-        x_sqt: x_sqt {
-            compatible = "zmk,behavior-hold-tap";
-            //label = "x_sqt";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&kp X>, <&kp DE_SQT>;
-        };
-    };
-};
-
-/ {
-    macros {
-        m_elongate: m_elongate {
-            //label = "m_elongate";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap &kp DE_ACUT> 
-                , <&kp>
-                ;
-        };
-        
-        m_longudia: m_longudia {
-            //label = "m_longudia";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LALT> 
-                , <&macro_tap &kp KP_N0 &kp KP_N3 &kp KP_N6 &kp KP_N9 >
-                , <&macro_release &kp LALT> 
-                ;
-        };
-    };
-};
+#include "layer_one.dtsi"
 
 ZMK_LAYER(default_layer,
- &kp J &kp D LONG(U) LONG(A) &x_sqt ___ ___ ___ ___ ___ ___ ___
- ___ ___ LONG(I) LONG(E) LONG(O) ___ ___ ___ ___ ___ ___ ___
-  ___ ___ &longudia ___ ___ ___ ___ ___ ___ ___ ___ ___
-   ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
+&kp j	&d_w	&u_accent	&a_accent	&x_accenti		&p_sqbr	&h_brac	&l_slash	&m_cbrac	&g_csqbrac
+&c_strg	&t_nav	&i_num	&e_accent	&o_accent		&kp b	&kp n	&r_apos	&s_ß	&enter_strg
+&kp f	&kp v	&udia_accent	&kp DE_ADIA	&odia_accent		&kp DE_Y	&td_z_at	&sl SHIF	&td_comm_quest	&k_q
+			&sl SHIF	&._excl		&kp BSPC	&space_nav			
 )
 
 ZMK_LAYER(shifted_layer,
