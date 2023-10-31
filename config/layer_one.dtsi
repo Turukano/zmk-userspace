@@ -58,7 +58,7 @@ ZMK_BEHAVIOR(g_csqbrac, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <280>;
     quick-tap-ms = <125>;
-    bindings = <&kp P>, <&kp DE_RBKT>;
+    bindings = <&kp G>, <&kp DE_RBKT>;
 )
 
 ZMK_BEHAVIOR(c_strg, hold_tap,
