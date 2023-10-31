@@ -28,8 +28,15 @@ ZMK_LAYER(default_layer,
 			&sl SHIF	&._excl		&kp BSPC	&space_nav			
 )
 
+ZMK_BEHAVIOR(d_w, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp S(D)>, <&kp S(W)>;
+)
+
 ZMK_LAYER(shifted_layer,
- ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
+ &kp S(J)	&D_W ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
   ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
    ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
     ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___

@@ -1,3 +1,10 @@
+ZMK_BEHAVIOR(d_w, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    bindings = <&kp D>, <&kp W>;
+)
+
 ZMK_BEHAVIOR(u_accent, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <280>;
