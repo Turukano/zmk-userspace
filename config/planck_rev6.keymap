@@ -1,1 +1,72 @@
-﻿#include "base.keymap"
+﻿#include <behaviors.dtsi>
+
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+#include "../zmk-nodefree-config/helper.h"
+
+//#include "../zmk-nodefree-config/keypos_def/keypos_48keys.h"
+//#include "../zmk-nodefree-config/international_chars/german.dtsi"
+
+#define ___ &trans
+#define XXX &none
+
+#define DEF         0
+#define SHIF        1
+#define NAV         2 
+#define NUM         3
+#define STRG        4
+
+#include "combos.dtsi" //muss nach den layerdefs sein
+#include "functions.dtsi"
+#include "german.dtsi"
+#include "layer_one.dtsi"
+#include "layer_two.dtsi"
+
+/*ZMK_LAYER(default_layer,
+&kp J	&d_w	&u_accent	&a_accent	&x_accenti		&p_sqbr	&h_brac	&l_slash	&m_cbrac	&g_csqbrac
+&c_strg	&t_nav	&i_num	&e_accent	&o_accent		&kp B	&kp N	&r_apos	&s_ss	&enter_strg
+&kp F	&kp V	&udia_accent	&kp DE_ADIA	&odia_accent		&kp DE_Y	&td_z_at	&sl 1	&td_comm_quest	&k_q
+	___  ___	___	&sl 1	&dot_excl		&kp BSPC	&space_nav		___	___  ___
+)*/
+
+ZMK_LAYER(defn_layer,
+ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
+  ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
+   ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
+    ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
+    )
+
+ZMK_LAYER(def_layer,
+ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
+  ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
+   ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
+    ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
+    )
+
+/*ZMK_LAYER(shifted_layer,
+&kp S(J)	&D_W	&U_ACCENT	&A_ACCENT	&X_ACCENTI		&P_larrow	&H_lcurl	&L_bslsh	&M_rcurl	&G_rarrow
+&kp S(C) 	&kp S(T)	&kp S(I)	&E_ACCENT	&O_ACCENT		&kp S(B)	&kp S(N)	&kp S(R) 	&kp S(S)	&senter_center
+&kp S(F)	&kp S(V)	&UDIA_ACCENT	&kp S(DE_ADIA)	&ODIA_ACCENT		&kp S(DE_Y)	&kp S(DE_Z)	&minus_unds	&kp DE_SEMI	&K_Q
+___ ___ ___ 			&kp DE_DQT	&kp DE_COLN		&kp C(BSPC)	&kp SPACE		 ___ ___ ___	
+)*/
+
+ZMK_LAYER(nav_layer,
+ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
+  ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
+   ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
+    ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
+    )
+
+ZMK_LAYER(num_layer,
+ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
+  ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
+   ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
+    ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
+    )
+
+ZMK_LAYER(strg_layer,
+ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
+  ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
+   ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
+    ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___)
