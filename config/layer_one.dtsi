@@ -103,7 +103,7 @@ ZMK_BEHAVIOR(r_apos, hold_tap,
     bindings = <&kp R>, <&kp DE_ACUT>;
 )
 
-ZMK_BEHAVIOR(s_ß, hold_tap,
+ZMK_BEHAVIOR(s_ss, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <280>;
     quick-tap-ms = <125>;
