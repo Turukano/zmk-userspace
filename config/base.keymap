@@ -1,3 +1,4 @@
+#include "functions.dtsi"
 #include <behaviors.dtsi>
 
 #include <dt-bindings/zmk/keys.h>
@@ -18,7 +19,6 @@
 
 #include "german.dtsi"
 #include "combos.dtsi" //muss nach den layerdefs sein
-#include "functions.dtsi"
 #include "layer_one.dtsi"
 #include "layer_two.dtsi"
 
