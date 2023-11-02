@@ -4,8 +4,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 #include "../zmk-nodefree-config/helper.h"
-
-//#include "../zmk-nodefree-config/keypos_def/keypos_48keys.h"
+#include "../zmk-nodefree-config/keypos_def/keypos_48keys.h"
 //#include "../zmk-nodefree-config/international_chars/german.dtsi"
 
 #define ___ &trans
@@ -17,9 +16,9 @@
 #define NUM         3
 #define STRG        4
 
+#include "german.dtsi"
 #include "combos.dtsi" //muss nach den layerdefs sein
 #include "functions.dtsi"
-#include "german.dtsi"
 #include "layer_one.dtsi"
 #include "layer_two.dtsi"
 
